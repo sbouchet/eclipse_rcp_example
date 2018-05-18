@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="RCP mail" uid="org.rcpmail.product" id="org.rcpmail.product" application="org.rcpmail.application" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+
+   <aboutInfo>
+      <text>
+         %aboutText
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+      <linux>/org.rcpmail.product/configuration/config.ini</linux>
+      <macosx>/org.rcpmail.product/configuration/config.ini</macosx>
+      <win32>/org.rcpmail.product/configuration/config.ini</win32>
+   </configIni>
+
+   <launcherArgs>
+      <vmArgsLin>-Xmx1500m
+      </vmArgsLin>
+      <vmArgsMac>-XstartOnFirstThread -Xmx1500m
+      </vmArgsMac>
+      <vmArgsWin>-Xmx1500m -Dsun.java2d.noddraw=true
+      </vmArgsWin>
+   </launcherArgs>
+
+   <windowImages/>
+
+   <splash
+      location="org.rcpmail"
+      startupProgressRect="0,280,455,15"
+      startupMessageRect="7,220,441,20"
+      startupForegroundColor="400040" />
+   <launcher name="rcpmail">
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+      <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</linux>
+      <macos include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</macos>
+      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</windows>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="org.rcpmail.feature" version="1.0.0.qualifier"/>
+      <feature id="org.eclipse.rcp" version="4.7.3.v20180330-0640"/>
+      <feature id="org.eclipse.emf.ecore"/>
+      <feature id="org.eclipse.emf.common"/>
+      <feature id="org.eclipse.e4.rcp"/>
+   </features>
+
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>

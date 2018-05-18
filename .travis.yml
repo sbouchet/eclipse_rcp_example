@@ -1,0 +1,9 @@
+language: java   
+
+cache:
+  directories:
+    - '$HOME/.m2'
+    - '$HOME/.sonar/cache'
+
+script:
+ - mvn clean verify sonar:sonar -Dsonar.organization=sbouchet-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=b2756b8513cf9bd5edbc26fc684864fb17038846
