@@ -1,0 +1,7 @@
+autoEnabled=true
+eclipse.preferences.version=1
+extraProperties=
+fileExclusions=
+moduleKey=org.sbouchet\:org.rcpmail.feature
+projectKey=org.sbouchet\:org.rcpmail.parent
+serverId=SonarCloud/sbouchet-github

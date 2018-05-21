@@ -18,6 +18,8 @@
 		<module>main/plugins/org.rcpmail.product</module>
 		<module>main/plugins/org.rcpmail</module>
 		<module>main/features/org.rcpmail.feature</module>
+		<module>tests/org.rcpmail.test.feature</module>
+		<module>tests/org.rcpmail.test</module>
 	</modules>
 
 	<build>
