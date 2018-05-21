@@ -14,7 +14,7 @@
    <extension
          point="org.eclipse.ui.perspectives">
       <perspective
-            name="RCP Perspective"
+            name="%perspective.name"
             class="org.rcpmail.Perspective"
             id="org.rcpmail.perspective">
       </perspective>
@@ -22,14 +22,14 @@
    <extension
          point="org.eclipse.ui.views">
       <view
-            name="Message"
+            name="%view.name"
             allowMultiple="true"
             icon="icons/sample2.gif"
             class="org.rcpmail.View"
             id="org.rcpmail.view">
       </view>
       <view
-            name="Mailboxes"
+            name="%view.name.0"
             allowMultiple="true"
             icon="icons/sample3.gif"
             class="org.rcpmail.NavigationView"
@@ -39,18 +39,18 @@
    <extension
          point="org.eclipse.ui.commands">
       <category
-            name="Mail"
+            name="%category.name"
             id="org.rcpmail.category">
       </category>
       <command
-            name="Open Mailbox"
-            description="Opens a mailbox"
+            name="%command.name"
+            description="%command.description"
             categoryId="org.rcpmail.category"
             id="org.rcpmail.open">
       </command>
       <command
-            name="Open Message Dialog"
-            description="Open a message dialog"
+            name="%command.name.0"
+            description="%command.description.0"
             categoryId="org.rcpmail.category"
             id="org.rcpmail.openMessage">
       </command>

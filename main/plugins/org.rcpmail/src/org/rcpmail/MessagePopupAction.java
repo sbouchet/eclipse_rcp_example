@@ -26,11 +26,11 @@ public class MessagePopupAction extends Action {
         setId(ICommandIds.CMD_OPEN_MESSAGE);
         // Associate the action with a pre-defined command, to allow key bindings.
         setActionDefinitionId(ICommandIds.CMD_OPEN_MESSAGE);
-        setImageDescriptor(org.rcpmail.Activator.getImageDescriptor("/icons/sample3.gif"));
+        setImageDescriptor(org.rcpmail.Activator.getImageDescriptor("/icons/sample3.gif")); //$NON-NLS-1$
     }
 
     @Override
 	public void run() {
-        MessageDialog.openInformation(window.getShell(), "Open", "Open Message Dialog!");
+        MessageDialog.openInformation(window.getShell(), Messages.MessagePopupAction_Titile, Messages.MessagePopupAction_Message);
     }
 }

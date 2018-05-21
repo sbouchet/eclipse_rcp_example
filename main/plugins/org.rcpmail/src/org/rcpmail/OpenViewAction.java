@@ -31,7 +31,7 @@ public class OpenViewAction extends Action {
 		setId(ICommandIds.CMD_OPEN);
         // Associate the action with a pre-defined command, to allow key bindings.
 		setActionDefinitionId(ICommandIds.CMD_OPEN);
-		setImageDescriptor(org.rcpmail.Activator.getImageDescriptor("/icons/sample2.gif"));
+		setImageDescriptor(org.rcpmail.Activator.getImageDescriptor("/icons/sample2.gif")); //$NON-NLS-1$
 	}
 	
 	@Override
@@ -40,7 +40,7 @@ public class OpenViewAction extends Action {
 			try {
 				window.getActivePage().showView(viewId, Integer.toString(instanceNum++), IWorkbenchPage.VIEW_ACTIVATE);
 			} catch (PartInitException e) {
-				MessageDialog.openError(window.getShell(), "Error", "Error opening view:" + e.getMessage());
+				MessageDialog.openError(window.getShell(), Messages.OpenViewAction_Title, Messages.OpenViewAction_Message + e.getMessage());
 			}
 		}
 	}

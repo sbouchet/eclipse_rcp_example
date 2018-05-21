@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NL
+Bundle-SymbolicName: org.rcpmail.nl
+Bundle-Version: 1.0.0.qualifier
+Fragment-Host: org.rcpmail;bundle-version="1.0.0"
+Automatic-Module-Name: org.rcpmail.nl
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Localization: bundle

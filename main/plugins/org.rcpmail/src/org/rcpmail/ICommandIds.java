@@ -19,7 +19,7 @@ package org.rcpmail;
  */
 public interface ICommandIds {
 
-    public static final String CMD_OPEN = "org.rcpmail.open";
-    public static final String CMD_OPEN_MESSAGE = "org.rcpmail.openMessage";
+    public static final String CMD_OPEN = "org.rcpmail.open"; //$NON-NLS-1$
+    public static final String CMD_OPEN_MESSAGE = "org.rcpmail.openMessage"; //$NON-NLS-1$
     
 }

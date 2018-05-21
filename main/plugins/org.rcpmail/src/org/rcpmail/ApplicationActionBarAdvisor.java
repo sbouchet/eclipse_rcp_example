@@ -65,17 +65,17 @@ public class ApplicationActionBarAdvisor extends ActionBarAdvisor {
         newWindowAction = ActionFactory.OPEN_NEW_WINDOW.create(window);
         register(newWindowAction);
         
-        openViewAction = new OpenViewAction(window, "Open Another Message View", View.ID);
+        openViewAction = new OpenViewAction(window, Messages.ApplicationActionBarAdvisor_Open_Another_Message, View.ID);
         register(openViewAction);
         
-        messagePopupAction = new MessagePopupAction("Open Message", window);
+        messagePopupAction = new MessagePopupAction(Messages.ApplicationActionBarAdvisor_Open_Message, window);
         register(messagePopupAction);
     }
     
     @Override
 	protected void fillMenuBar(IMenuManager menuBar) {
-        MenuManager fileMenu = new MenuManager("&File", IWorkbenchActionConstants.M_FILE);
-        MenuManager helpMenu = new MenuManager("&Help", IWorkbenchActionConstants.M_HELP);
+        MenuManager fileMenu = new MenuManager(Messages.ApplicationActionBarAdvisor_File, IWorkbenchActionConstants.M_FILE);
+        MenuManager helpMenu = new MenuManager(Messages.ApplicationActionBarAdvisor_Help, IWorkbenchActionConstants.M_HELP);
         
         menuBar.add(fileMenu);
         // Add a group marker indicating where action set menus will appear.
@@ -97,7 +97,7 @@ public class ApplicationActionBarAdvisor extends ActionBarAdvisor {
     @Override
 	protected void fillCoolBar(ICoolBarManager coolBar) {
         IToolBarManager toolbar = new ToolBarManager(SWT.FLAT | SWT.RIGHT);
-        coolBar.add(new ToolBarContributionItem(toolbar, "main"));   
+        coolBar.add(new ToolBarContributionItem(toolbar, "main"));    //$NON-NLS-1$
         toolbar.add(openViewAction);
         toolbar.add(messagePopupAction);
     }

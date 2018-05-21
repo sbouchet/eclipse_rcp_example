@@ -11,7 +11,6 @@
 
    <configIni use="default">
       <linux>/org.rcpmail.product/configuration/config.ini</linux>
-      <macosx>/org.rcpmail.product/configuration/config.ini</macosx>
       <win32>/org.rcpmail.product/configuration/config.ini</win32>
    </configIni>
 
@@ -54,6 +53,13 @@
       <feature id="org.eclipse.e4.rcp"/>
    </features>
 
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+   </configurations>
 
    <preferencesInfo>
       <targetfile overwrite="false"/>

@@ -24,7 +24,7 @@ import org.eclipse.ui.part.ViewPart;
 
 public class NavigationView extends ViewPart {
 
-    public static final String ID = "org.rcpmail.navigationView";
+    public static final String ID = "org.rcpmail.navigationView"; //$NON-NLS-1$
 
     private TreeViewer viewer;
 
@@ -144,19 +144,19 @@ public class NavigationView extends ViewPart {
      * expose its hierarchy.
      */
     private TreeObject createDummyModel() {
-        TreeObject to1 = new TreeObject("Inbox");
-        TreeObject to2 = new TreeObject("Drafts");
-        TreeObject to3 = new TreeObject("Sent");
-        TreeParent p1 = new TreeParent("me@this.com");
+        TreeObject to1 = new TreeObject(Messages.NavigationView_Inbox);
+        TreeObject to2 = new TreeObject(Messages.NavigationView_Drafts);
+        TreeObject to3 = new TreeObject(Messages.NavigationView_Sent);
+        TreeParent p1 = new TreeParent(Messages.NavigationView_personnal_account);
         p1.addChild(to1);
         p1.addChild(to2);
         p1.addChild(to3);
 
-        TreeObject to4 = new TreeObject("Inbox");
-        TreeParent p2 = new TreeParent("other@aol.com");
+        TreeObject to4 = new TreeObject(Messages.NavigationView_Inbox);
+        TreeParent p2 = new TreeParent(Messages.NavigationView_another_account);
         p2.addChild(to4);
 
-        TreeParent root = new TreeParent("");
+        TreeParent root = new TreeParent(""); //$NON-NLS-1$
         root.addChild(p1);
         root.addChild(p2);
         return root;

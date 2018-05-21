@@ -20,7 +20,7 @@ import org.eclipse.ui.application.WorkbenchWindowAdvisor;
  */
 public class ApplicationWorkbenchAdvisor extends WorkbenchAdvisor {
 	
-	private static final String PERSPECTIVE_ID = "org.rcpmail.perspective";
+	private static final String PERSPECTIVE_ID = "org.rcpmail.perspective"; //$NON-NLS-1$
 
     @Override
 	public WorkbenchWindowAdvisor createWorkbenchWindowAdvisor(IWorkbenchWindowConfigurer configurer) {

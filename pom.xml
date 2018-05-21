@@ -20,6 +20,7 @@
 		<module>main/features/org.rcpmail.feature</module>
 		<module>tests/org.rcpmail.test.feature</module>
 		<module>tests/org.rcpmail.test</module>
+		<module>i18n/org.rcpmail.nl</module>
 	</modules>
 
 	<build>
